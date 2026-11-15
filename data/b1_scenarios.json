@@ -1,0 +1,268 @@
+{
+  "note": "B1 全系统仿真验证（仿真验证结果，非硬件实测）——符合不伪造板上数据铁律",
+  "sources": {
+    "crypto_cycles": "template_taes.tex tab:cycles (D=1, CoV=0.000%)",
+    "c2_kpi": "3GPP TR 36.777: 60-100 kbps, PER<=1e-3, <=50ms one-way",
+    "channel": "ITU-R P.525 + Proakis QPSK Rayleigh closed-form",
+    "mavlink": "MAVLink v2 frame (12B overhead)"
+  },
+  "s1": [
+    {
+      "rate_kbps": 60.0,
+      "clock": "24 MHz",
+      "mhz": 24.0,
+      "hs_p50": 275.71786775939074,
+      "hs_p95": 275.7194094260574,
+      "hs_p99": 275.7197844260574,
+      "hs_max": 275.7200344260574,
+      "hs_mean": 275.71787819689075,
+      "hs_success": 0.9999999999999998,
+      "hs_compute": 18.474708333333332,
+      "hs_transmit": 257.2437427593907,
+      "cmd_total_ms": 5.9171393059726345,
+      "cmd_aes_ms": 0.0445,
+      "cmd_transmit_ms": 5.872639305972634,
+      "cmd_budget50_pct": 11.834278611945269,
+      "cmd_budget10_pct": 59.17139305972634
+    },
+    {
+      "rate_kbps": 60.0,
+      "clock": "28.90 MHz",
+      "mhz": 28.9,
+      "hs_p50": 272.58557666942534,
+      "hs_p95": 272.58685694624194,
+      "hs_p99": 272.5871683649271,
+      "hs_max": 272.58737597738383,
+      "hs_mean": 272.5855853372454,
+      "hs_success": 0.9999999999999998,
+      "hs_compute": 15.342145328719724,
+      "hs_transmit": 257.2437427593907,
+      "cmd_total_ms": 5.909940344034918,
+      "cmd_aes_ms": 0.037301038062283735,
+      "cmd_transmit_ms": 5.872639305972634,
+      "cmd_budget50_pct": 11.819880688069835,
+      "cmd_budget10_pct": 59.09940344034917
+    },
+    {
+      "rate_kbps": 100.0,
+      "clock": "24 MHz",
+      "mhz": 24.0,
+      "hs_p50": 172.82041641322778,
+      "hs_p95": 172.82195807989447,
+      "hs_p99": 172.82233307989446,
+      "hs_max": 172.82258307989446,
+      "hs_mean": 172.82042685072778,
+      "hs_success": 0.9999999999999998,
+      "hs_compute": 18.473458333333333,
+      "hs_transmit": 154.3462914132278,
+      "cmd_total_ms": 3.569540290290287,
+      "cmd_aes_ms": 0.04591666666666667,
+      "cmd_transmit_ms": 3.52362362362362,
+      "cmd_budget50_pct": 7.139080580580575,
+      "cmd_budget10_pct": 35.69540290290287
+    },
+    {
+      "rate_kbps": 100.0,
+      "clock": "28.90 MHz",
+      "mhz": 28.9,
+      "hs_p50": 169.6881253232624,
+      "hs_p95": 169.689405600079,
+      "hs_p99": 169.68971701876413,
+      "hs_max": 169.68992463122086,
+      "hs_mean": 169.68813399108245,
+      "hs_success": 0.9999999999999998,
+      "hs_compute": 15.341349480968859,
+      "hs_transmit": 154.3462914132278,
+      "cmd_total_ms": 3.560025007706665,
+      "cmd_aes_ms": 0.03640138408304498,
+      "cmd_transmit_ms": 3.52362362362362,
+      "cmd_budget50_pct": 7.12005001541333,
+      "cmd_budget10_pct": 35.600250077066654
+    }
+  ],
+  "s2": [
+    {
+      "per": 0.01,
+      "rate_kbps": 60.0,
+      "cmd_total_ms": 5.972102693000001,
+      "cmd_budget50_pct": 11.944205386000002,
+      "cmd_budget10_pct": 59.72102693000001,
+      "hs_p50": 276.11413579179475,
+      "hs_p95": 276.11567745846145,
+      "hs_max": 276.1163024584614,
+      "hs_success": 0.9999999998999558
+    },
+    {
+      "per": 0.01,
+      "rate_kbps": 100.0,
+      "cmd_total_ms": 3.6018989895333333,
+      "cmd_budget50_pct": 7.2037979790666675,
+      "cmd_budget10_pct": 36.018989895333334,
+      "hs_p50": 173.0585929872154,
+      "hs_p95": 173.0601346538821,
+      "hs_max": 173.0607596538821,
+      "hs_success": 0.9999999998999558
+    },
+    {
+      "per": 0.1,
+      "rate_kbps": 60.0,
+      "cmd_total_ms": 6.575896666666667,
+      "cmd_budget50_pct": 13.151793333333334,
+      "cmd_budget10_pct": 65.75896666666668,
+      "hs_p50": 280.35475570798985,
+      "hs_p95": 280.3562973746565,
+      "hs_max": 280.3569223746565,
+      "hs_success": 0.9999899947919249
+    },
+    {
+      "per": 0.1,
+      "rate_kbps": 100.0,
+      "cmd_total_ms": 3.9680986666666667,
+      "cmd_budget50_pct": 7.936197333333333,
+      "cmd_budget10_pct": 39.68098666666667,
+      "hs_p50": 175.6075540386259,
+      "hs_p95": 175.6090957052926,
+      "hs_max": 175.60972070529257,
+      "hs_success": 0.9999899947919249
+    }
+  ],
+  "s3": [
+    {
+      "per": 0.001,
+      "rate_kbps": 60.0,
+      "one_handshake_p50": 275.71786775939074,
+      "one_handshake_mean": 275.71787819689075,
+      "total_rekey_mean_ms": 2757.1787819689075,
+      "interruption_window_p95": 275.7194094260574,
+      "success_rate": 0.9999999999999998
+    },
+    {
+      "per": 0.001,
+      "rate_kbps": 100.0,
+      "one_handshake_p50": 172.82041641322778,
+      "one_handshake_mean": 172.82042685072778,
+      "total_rekey_mean_ms": 1728.204268507278,
+      "interruption_window_p95": 172.82195807989447,
+      "success_rate": 0.9999999999999998
+    },
+    {
+      "per": 0.01,
+      "rate_kbps": 60.0,
+      "one_handshake_p50": 276.11413579179475,
+      "one_handshake_mean": 276.11414622929476,
+      "total_rekey_mean_ms": 2761.141462292948,
+      "interruption_window_p95": 276.11567745846145,
+      "success_rate": 0.9999999998999558
+    },
+    {
+      "per": 0.01,
+      "rate_kbps": 100.0,
+      "one_handshake_p50": 173.0585929872154,
+      "one_handshake_mean": 173.05860342471541,
+      "total_rekey_mean_ms": 1730.5860342471542,
+      "interruption_window_p95": 173.0601346538821,
+      "success_rate": 0.9999999998999558
+    },
+    {
+      "per": 0.1,
+      "rate_kbps": 60.0,
+      "one_handshake_p50": 280.35475570798985,
+      "one_handshake_mean": 280.3547661454898,
+      "total_rekey_mean_ms": 2803.547661454898,
+      "interruption_window_p95": 280.3562973746565,
+      "success_rate": 0.9999899947919249
+    },
+    {
+      "per": 0.1,
+      "rate_kbps": 100.0,
+      "one_handshake_p50": 175.6075540386259,
+      "one_handshake_mean": 175.6075644761259,
+      "total_rekey_mean_ms": 1756.075644761259,
+      "interruption_window_p95": 175.6090957052926,
+      "success_rate": 0.9999899947919249
+    }
+  ],
+  "s4": {
+    "injected": 240,
+    "implicit_reject": 240,
+    "accept": 0,
+    "reject_rate": 1.0,
+    "semantics": "FIPS 203 §11.2.1：故障/畸形密文永不产生共享秘密（隐式拒绝）"
+  },
+  "s5": [
+    {
+      "level": "Level-1/2",
+      "scale": 1.0,
+      "rate_kbps": 60.0,
+      "compute_p50_scaled": 275.7179094260574,
+      "transmit": 137.8589547130287,
+      "total_p50_scaled": 275.71782609272407,
+      "compute_ms": 18.474083333333333,
+      "transmit_ms": 257.2437427593907
+    },
+    {
+      "level": "Level-1/2",
+      "scale": 1.0,
+      "rate_kbps": 100.0,
+      "compute_p50_scaled": 172.82045807989445,
+      "transmit": 86.41022903994723,
+      "total_p50_scaled": 172.82029141322778,
+      "compute_ms": 18.474,
+      "transmit_ms": 154.3462914132278
+    },
+    {
+      "level": "Level-3/5",
+      "scale": 2.0,
+      "rate_kbps": 60.0,
+      "compute_p50_scaled": 551.4358188521148,
+      "transmit": 137.8589547130287,
+      "total_p50_scaled": 294.19140942605736,
+      "compute_ms": 18.47383333333333,
+      "transmit_ms": 257.2437427593907
+    },
+    {
+      "level": "Level-3/5",
+      "scale": 2.0,
+      "rate_kbps": 100.0,
+      "compute_p50_scaled": 345.6409161597889,
+      "transmit": 86.41022903994723,
+      "total_p50_scaled": 191.29654141322777,
+      "compute_ms": 18.475125,
+      "transmit_ms": 154.3462914132278
+    }
+  ],
+  "bottleneck": [
+    {
+      "rate_kbps": 60.0,
+      "clock": "24 MHz",
+      "compute_ms": 18.473708333333335,
+      "transmit_ms": 257.2437427593907,
+      "compute_to_transmit_ratio": 0.07181402406593211,
+      "total_ms": 275.71745109272405
+    },
+    {
+      "rate_kbps": 60.0,
+      "clock": "28.90 MHz",
+      "compute_ms": 15.341384083044984,
+      "transmit_ms": 257.2437427593907,
+      "compute_to_transmit_ratio": 0.05963754032841269,
+      "total_ms": 272.5851268424357
+    },
+    {
+      "rate_kbps": 100.0,
+      "clock": "24 MHz",
+      "compute_ms": 18.473583333333334,
+      "transmit_ms": 154.3462914132278,
+      "compute_to_transmit_ratio": 0.11968919475929896,
+      "total_ms": 172.8198747465611
+    },
+    {
+      "rate_kbps": 100.0,
+      "clock": "28.90 MHz",
+      "compute_ms": 15.342595155709343,
+      "transmit_ms": 154.3462914132278,
+      "compute_to_transmit_ratio": 0.09940371754467987,
+      "total_ms": 169.68888656893714
+    }
+  ]
+}
